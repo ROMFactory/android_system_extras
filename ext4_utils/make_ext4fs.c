@@ -394,7 +394,7 @@ int make_ext4fs(const char *filename, long long len,
 		return EXIT_FAILURE;
 	}
 
-	status = make_ext4fs_internal(fd, NULL, mountpoint, NULL, 0, 0, 0, 1, sehnd, 0);
+	status = make_ext4fs_internal(fd, NULL, mountpoint, NULL, 0, 0, 0, 0, sehnd, 0);
 	close(fd);
 
 	return status;
